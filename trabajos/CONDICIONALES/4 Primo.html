@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Primo</title>
+    <link rel="stylesheet" href="../css3/1.css">
+</head>
+<body>
+    <h1>Programa que al ingresar un numero determina si es primo o no.</h1><hr color="black">
+    
+    <title>Numero Primo SI o NO</title>
+    <script>
+        function verificarPrimo() {
+            var numero = document.getElementById("numero").value;
+            var esPrimo = true;
+            if (numero <= 1) {
+                esPrimo = false;
+            } else {
+                for (var i = 2; i < numero; i++) {
+                    if (numero % i === 0) {
+                        esPrimo = false;
+                        break;
+                    }
+                }
+            }
+
+            if (esPrimo) {
+                alert(numero + " SI es un número primo.");
+            } else {
+                alert(numero + " NO es un número primo.");
+            }
+        }
+    </script>
+
+    <h1>Numero Primo SI o NO</h1>
+    <p>Ingrese un número:</p>
+    <input type="number" id="numero">
+    <button onclick="verificarPrimo()">Verificar</button>
+
+    </head>
+</body>
+</html>

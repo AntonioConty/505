@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="trabajos/css3/1.css">
+  <title>Neutros</title>
+</head>
+
+<body>
+<h1>Realiza un programa en Javascript dónde se te pida un número y verificar si es negativo, positivo o neutro </h1><hr>
+
+  <h1>Comprobador de Positivos Negativos y Neutros</h1>
+  <input type="number" id="number">
+  <button onclick="checkNumber()">Comprobar</button>
+  <script>
+    function checkNumber() {
+      const number = document.getElementById("number").value;
+      if (number < 0) {
+        alert("El número es negativo");
+      } else if (number > 0) {
+        alert("El número es positivo");
+      } else {
+        alert("El número es neutro");
+      }
+    }
+  </script>
+</body>
+</html>

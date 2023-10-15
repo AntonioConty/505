@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  *{
+  transition: 2s ease all;
+  }
+  body{
+  color: rgb(178, 178, 178);
+  background: linear-gradient(85deg, rgb(211, 155, 0) 25%, rgb(34, 34, 34) 64%, rgba(255, 238, 0, 0.644) 100%);
+  }
+  header{
+  border: red 5px none;
+  }
+  
+  img{
+  border-color: black rgb(255, 255, 255) rgb(0, 0, 0);
+  border-width: 10px;
+  border-style: solid;
+  box-shadow:0 0 10px rgb(255, 0, 0); ;
+  }
+  h1{
+  background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent; 
+  border-top: black 5px dashed;
+  border-left: rgb(0, 123, 255) 5px solid; 
+  }
+  h3{
+  background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;  
+  box-shadow: black;
+  }
+  p{
+  background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;  
+  }
+aside{
+    background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    color: transparent; 
+    border-top: black 5px ;
+}
+  footer{
+    background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Division 2 numeros</title>
+    <link rel="stylesheet" href="../css3/1.css" />
+  </head>
+  <body>
+    <h1>Programa que pida ingresar la coordenada de un punto en el plano, es decir, dos valores enteros 
+        x e y(distinto a 0), e imprima en pantalla en que cuadrante se ubica dicho punto</h1><hr color="black" />
+
+    <h1>Coordenadas</h1>
+
+    <form>
+      <label for="x">Coordenada x:</label>
+      <input type="number" id="x" />
+    
+      <label for="y">Coordenada y:</label>
+      <input type="number" id="y" />
+    
+      <input type="submit" value="Respuesta" />
+    </form>
+    
+    <div id="resultado"></div>
+
+    <script>
+      const form = document.querySelector("form");
+      const resultado = document.querySelector("#resultado");
+    
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+    
+        const x = parseInt(document.querySelector("#x").value);
+        const y = parseInt(document.querySelector("#y").value);
+        let cuadrante;
+    
+        if (x > 0 && y > 0) {
+          cuadrante = "primer cuadrante";
+    
+        } else if (x < 0 && y > 0) {
+          cuadrante = "segundo cuadrante";
+    
+        } else if (x < 0 && y < 0) {
+          cuadrante = "tercer cuadrante";
+    
+        } else if (x > 0 && y < 0) {
+          cuadrante = "cuarto cuadrante";
+    
+        } else {
+          cuadrante = "el origen";
+    
+        }
+        resultado.innerHTML = `El punto (${x}, ${y}) se encuentra en el ${cuadrante}.`;
+      });
+    </script>
+  </body>
+</html>

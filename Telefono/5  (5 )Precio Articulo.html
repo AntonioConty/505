@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precio Articulo</title>
+    <link rel="stylesheet" href="trabajos/css3/1.css" />
+  </head>
+  <body>
+    <h1>Ingresar Precio y Articulo</h1>
+
+    <script>
+
+      function pago() {
+        let precio = parseFloat(prompt("introduce el precio del articulo"));
+        let cantidad = parseInt(prompt("introduce la cantidad que se lleva"));
+
+        let pago = precio * cantidad;
+
+        document.write("Su total a pagar es de:$" + pago);
+      }
+      pago();
+
+    </script>
+  </body>
+</html>

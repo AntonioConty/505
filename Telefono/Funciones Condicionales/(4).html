@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajos/css3/1.css">
+    <title>Numero Primo</title>
+</head>
+<body>
+    <h1>Actividad 2 "Numeros Primos" de Condicionales En "Funciones con parametros"</h1>
+    
+    <script>
+        function numer(){
+            let n1=parseFloat(prompt("Introduce un Numero"))
+            verificarPrimo(n1)
+        }
+        function verificarPrimo(n1){
+            let primo=n1%2
+            
+            if (primo==1){
+                document.write(n1 + " SI es un número primo.")
+            }
+
+            else if (primo==0){
+                document.write(n1 + " NO es un número primo.")
+            }
+        }
+        numer()
+    </script>
+    </script>
+
+
+</body>
+</html>

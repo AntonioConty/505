@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente llantas</title>
+    <link rel="stylesheet" href="../css3/1.css" />
+  </head>
+  <body>
+    <h1>Programa que realiza el ejercicio el cual muestre el nombre del cliente en la compra de llantas, si la cantidad 
+        de llantas comprados es menor de 12 pagara 700 pesos por unidad, y si es mayor de 12 pagara 480, además se
+      debe mostrar el total de la compra.</h1><hr color="black" />
+
+      <title>Ejercicio de Compra de llantas</title>
+    </head>
+
+    <form>
+      <h3 for="nombre">Nombre del cliente:</h3>
+      <input type="text" id="nombre" name="nombre" /><br />
+
+      <h3 for="cantidad">Cantidad de llantas compradas:</h3>
+      <input type="number" id="cantidad" name="cantidad" /><br><br>
+
+      <input type="submit" value="Calcular total">
+    </form>
+
+    <p id="total"></p>
+    
+    <script>
+      const form = document.querySelector("form");
+      const nombre = document.querySelector("#nombre");
+      const cantidad = document.querySelector("#cantidad");
+      const total = document.querySelector("#total");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const nombreCliente = nombre.value;
+        const cantidadLlantas = parseFloat(cantidad.value);
+        let precioTotal;
+
+        if (cantidadLlantas < 12) {
+          precioTotal = cantidadLlantas * 700;
+        } else {
+          precioTotal = cantidadLlantas * 480;
+        }
+        total.innerHTML = `El total de la compra para ${nombreCliente} es de $${precioTotal}`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajos/css3/1.css">
+    <title>Cooredendas</title>
+</head>
+<body>
+    <h1>Actividad 8 "indicador de cuadrantes (Cooredendas)" de Condicionales En "Funciones con parametros"</h1>
+    <script>
+        function numer(){
+            let n1=parseFloat(prompt(" Cooredenda X"));
+            let n2=parseFloat(prompt(" Cooredenda Y"));
+            opera(n1,n2)
+        }
+        function opera(n1,n2){
+            if(n1==0 || n2==0){
+                document.write("Introduce numeros arriba de 0")
+            }
+
+            else {
+                document.write("El cuadrante esta en X=="+n1+"____Y=="+n2)
+            }
+        }
+            numer()
+    </script>
+
+</body>
+</html>

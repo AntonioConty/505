@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajos/css3/1.css">
+    <title>Mayor Menor Igual</title>
+</head>
+<body>
+    <h1>Actividad 1 "Numeros Mayor Menor Igual" de Condicionales En "Funciones con parametros"</h1>
+    <script>
+        function numer(){
+            let n1=parseFloat(prompt("Introduce Numero 1"));
+            let n2=parseFloat(prompt("Introduce Numero 2"));
+            opera(n1,n2)
+        }
+        function opera(n1,n2){
+            if(n1>n2){
+                document.write("Numero 1____"+n1+"____Es el numero mayor")
+            }
+            else if(n1==n2){
+                document.write("Los Numeros son iguales")
+            }
+            else if(n1<n2){
+                document.write("Numero 2____"+n2+"____Es el numero mayor ")
+            }
+        }
+            numer()
+    </script>
+
+</body>
+</html>

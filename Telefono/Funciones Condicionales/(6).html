@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajos/css3/1.css">
+    <title>Cliente Lantas</title>
+</head>
+<body>
+    <h1>Actividad 6 "Artículos comprados Lantas" de Condicionales En "Funciones con parametros"</h1>
+    
+    <script>
+        function numer(){
+            let cliente=prompt("Nombre")
+            let n=parseFloat(prompt("Llantas compradas"))
+            opera(cliente,n)
+        }
+        function opera(cliente,n){
+
+            if (n<=12) {
+                let respusta=n*700
+                document.write(cliente + " ___compro___" + n+ "___llanta(s), su total a pagar___$" +respusta)
+            } 
+            
+            else if (n>12){
+                let respusta=n*480
+                document.write(cliente + "___compro___" + n+ "___articulo(s), su total a pagar con tarjeta___$"+respusta)
+            }
+            
+        }
+        numer()
+    </script>
+    </script>
+
+
+</body>
+</html>

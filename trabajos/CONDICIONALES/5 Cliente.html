@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artículos comprados</title>
+    <link rel="stylesheet" href="../css3/1.css" />
+  </head>
+  <body>
+
+    <h1>Programa que realizar el ejercicio en el cual muestre el nombre del cliente y la cantidad de artículos comprados,
+     si la cantidad es menor de 5 pagara en efectivo, si es mayor de 5 y menor de 12 pagara con tarjeta, si es mayor 
+     de 13 pagara con cheque.</h1><hr color="black">
+
+        <title>Pago de Artículos comprados</title>
+
+      <h3>Nombre del cliente:</h3>
+      <input type="text" id="nombre" /><br>
+
+      <h3>Cantidad de artículos comprados:</h3>
+      <input type="number" id="cantidad" /><br><br>
+
+      <button onclick="calcularPago()">Calcular pago</button>
+      <p id="resultado"></p>
+
+      <script>
+        function calcularPago() {
+          var nombre = document.getElementById("nombre").value;
+          var cantidad = document.getElementById("cantidad").value;
+          var metodoDePago;
+
+          if (cantidad < 5) {
+            metodoDePago = "efectivo";
+
+          } else if (cantidad >= 5 && cantidad < 12) {
+            metodoDePago = "tarjeta";
+
+          } else {
+            metodoDePago = "cheque";
+          }
+
+          document.getElementById("resultado").innerHTML =
+            "El cliente " + nombre + " pagará con " + metodoDePago;
+        }
+      </script>
+    </head>
+  </body>
+</html>

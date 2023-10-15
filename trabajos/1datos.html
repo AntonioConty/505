@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datos</title>
+    <link rel="stylesheet" href="css3/1.css">
+    </head>
+    <body onload="mostrarpers();">
+    <div class="container-fluid text-center m-auto">
+      <h1 class="bg-dark text-info mt-3 p-2">REGISTRO DE DATOS</h1><hr color="black">
+      <h1>Programa que introduce nombre, apellidos, dirección, telefono y despues muestra en pantalla los datos.</h1>
+      <div class="card w-100 bg-dark text-dark mt-2" id="listUS">
+        <p>Datos Personales</p>
+      </div><br />
+       
+<center><div class="modal fade" id="addModalper" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr color="black"><h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Datos</h1>
+        </div>
+        <div class="modal-body">
+            
+          <form id="formAdd">
+    <h2>Nombre</h2>
+    <input type="text" name="" id="nombre" class="form-control m-1">
+
+    <h2>Apellidos</h2>
+    <input type="text" name="" id="apellidos" class="form-control m-1">
+
+    <h2>Direccion</h2>
+    <input type="text" name="" id="dire" class="form-control m-1">
+
+    <h2>Telefono</h2>
+    <input type="text" name="" id="tel" class="form-control m-1">
+
+          </form><br><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="my-button" id="agregar">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div></center>
+
+    </div>
+    <script src="js/1.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    </body>
+    </html>

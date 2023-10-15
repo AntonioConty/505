@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros >< </title>
+    <link rel="stylesheet" href="../css3/1.css">
+</head>
+<body>
+    <h1>Programa que pida 3 números y los muestre en pantalla de menor a mayor.</h1><hr color="black">
+    
+
+  <h1>Numeros Menor a Mayor </h1>
+  <form>
+    <h3>Imgresa numero 1</h3>
+    <input type="number" id="num1">
+
+    <h3>Imgresa numero 2</h3>
+    <input type="number" id="num2">
+
+    <h3>Imgresa numero 3</h3>
+    <input type="number" id="num3"><br><br>
+
+    <input type="submit" value="Ordenar"><br>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    const num1 = document.getElementById('num1');
+    const num2 = document.getElementById('num2');
+    const num3 = document.getElementById('num3');
+
+    const resultado = document.getElementById('resultado');
+
+    document.querySelector('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const numeros = [num1.value, num2.value, num3.value];
+      numeros.sort((a, b) => a - b);
+
+      resultado.innerHTML = `Los números ordenados de menor a mayor son: ${numeros.join(', ')}`;
+    });
+  </script>
+</body>
+</html>

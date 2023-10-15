@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajos/css3/1.css">
+    <title>Triangulo</title>
+</head>
+<body>
+    <h1>Actividad 3 "Clasificacion de Triangulos" de Condicionales En "Funciones con parametros"</h1><hr color="black">
+    <script>
+        function numer(){
+            let n1=parseFloat(prompt("Introduce Lado 1"));
+            let n2=parseFloat(prompt("Introduce  Lado 2"));
+            let n3=parseFloat(prompt("Introduce  Lado 3"));
+            let grados=parseFloat(prompt("Introduce Grado"));
+            opera(n1,n2,n3,grados)
+        }
+        function opera(n1,n2,n3,grados){
+            if(n1<=0 || n2<=0 || n3<=0){
+                document.write("Introduce un numero")
+            }
+            else if(grados==90){
+                document.write("Triangulo RECTANGULO")
+            }
+
+            else if(n1==n2 && n1==n3){
+                document.write("Triangulo EQUILATERO")
+            }
+
+            else if(n1==n2 || n1==n3 || n3==n2){
+                document.write("Triangulo ISOCELES")
+            }
+
+            else if(n1!=n2 && n1!=n3 && n3!=n2){
+                document.write("Triangulo ESCALENO")
+            }
+        }
+            numer()
+    </script>
+
+</body>
+</html>
